@@ -1,6 +1,6 @@
 import React from "react";
 
-const FoodDetailsw = () => {
+const FoodDetails = () => {
   return <div>FoodDetails</div>;
 };
 
