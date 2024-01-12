@@ -11,7 +11,7 @@ import {
   ScreenHeaderBtn,
   Welcome,
 } from "../components";
-import CartCount from "../components/cart/cartcount/CartCount";
+import CartCount from "../components/common/cartcount/CartCount";
 
 const Home = () => {
   const [cartItems, setCartItems] = useState("");
