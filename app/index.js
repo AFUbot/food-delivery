@@ -11,7 +11,7 @@ import {
   ScreenHeaderBtn,
   Welcome,
 } from "../components";
-import Cart from "../components/common/cart/Cart";
+import CartCount from "../components/common/cartcount/CartCount";
 
 const Home = () => {
   const [cartItems, setCartItems] = useState("");
@@ -39,7 +39,7 @@ const Home = () => {
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{ flex: 1, padding: SIZES.medium }}>
           <Welcome></Welcome>
-          <Cart count={1} />
+          <CartCount count={1} />
           <Popularjobs
             handleCartItem={() => setCartItems(item)}
             name="Main Dishes"
