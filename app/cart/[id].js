@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { COLORS, icons, images } from "../../constants";
 import { ScreenHeaderBtn } from "../../components";
 
-const Cart = () => {
+const Cart = (props) => {
     const router = useRouter();
 
     return (
@@ -25,6 +25,8 @@ const Cart = () => {
                     headerTitle: "Cart",
                 }}
             />
+
+            
         </SafeAreaView>
     );
 };
