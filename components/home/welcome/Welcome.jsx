@@ -62,7 +62,12 @@ const Welcome = () => {
         />
       </View>
       <View style={{ marginTop: 15 }} color="#841584">
-        <Button title="Proceed to Checkout" />
+        <Button 
+          onPress={() => {
+            router.push(`/cart/${1}`);
+          }}
+          title="Proceed to Checkout" 
+        />
       </View>
     </View>
   );
