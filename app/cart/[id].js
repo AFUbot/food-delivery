@@ -1,10 +1,13 @@
 import { Stack, useRouter } from "expo-router";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { COLORS, icons, images } from "../../constants";
+import { COLORS, SIZES, icons, images } from "../../constants";
 import { ScreenHeaderBtn } from "../../components";
+import { ScrollView, Text, View } from "react-native";
+import CartItem from "../../components/cart/cartitem/CartItem";
+import Cart from "../../components/cart/cart/Cart";
 
-const Cart = (props) => {
+const cartPage = (props) => {
     const router = useRouter();
 
     return (
@@ -26,9 +29,11 @@ const Cart = (props) => {
                 }}
             />
 
-            
+            <View>
+                <Cart />
+            </View>
         </SafeAreaView>
     );
 };
 
-export default Cart;
+export default cartPage;
